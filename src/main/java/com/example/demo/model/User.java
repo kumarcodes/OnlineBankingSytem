@@ -10,28 +10,28 @@ public class User {
 
     @Id
     @GeneratedValue
-    private Long id;
+        private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column
     private String username;
 
-    @Column(nullable = false)
+    @Column
     private String password;
 
-    @Column(nullable = false)
+    @Column
     private String firstName;
 
-    @Column(nullable = false)
+    @Column
     private String lastName;
 
-    @Column(nullable = false)
+    @Column
     private String address;
 
-    @Column(nullable = false, unique = true)
+    @Column
     private String emailId;
 
-    @Column(nullable = false, unique = true)
-    private int mobileNumber;
+    @Column
+    private Long mobileNumber;
 
 }
 
